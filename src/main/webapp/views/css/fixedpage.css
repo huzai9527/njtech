@@ -1,0 +1,144 @@
+﻿body
+{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+*
+{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+.fixed_main
+{
+	margin: 0px auto 0px auto;
+	text-align: center;
+	width: 1000px;
+}
+.fixed_banner
+{
+	width: 1000px;
+	height: 150px;
+	background-image: url(        "../images/banner.jpg" );
+	text-align: right;
+	vertical-align: bottom;
+}
+.fixed_left
+{
+	float: left;
+	width: 200px;
+	text-align: center;
+	height: 710px;
+	margin: 0px;
+}
+.frame_left
+{
+	margin: 0px auto 0px auto;
+	width: 200px;
+	height: 100%;
+	margin-top: 10px;
+}
+.fixed_right
+{
+	width: 610px;
+	float: left;
+	text-align: center;
+	margin: 10px auto auto 15px;
+}
+.fixed_right_top
+{
+	width: 785px;
+	height: 30px;
+	background-image: url( "../images/header.png" );
+	text-align: left;
+	vertical-align: middle;
+}
+.fixed_right_top_p
+{
+	line-height: 30px;
+	margin-left: 30px;
+	font-weight: bold;
+	font-size: larger;
+	color:White;
+}
+.fixed_right_bot
+{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-bottom:20px;
+}
+.fixed_footer
+{
+	width: 1000px;
+	height: 50px;
+	background-image: url(  "../images/footer.jpg" );
+	margin-top: 10px;
+}
+
+/*学院简介样式*/
+.xy_xyjj_p
+{
+	font-size: 16px;
+	line-height: 30px;
+	font-family: 华文楷体;
+	text-align: left;
+	text-indent: 2em;
+	margin: 10px 15px auto 15px;
+}
+
+/*现任领导样式*/
+.xy_xrld_td1
+{
+	width: 180px;
+	height: 30px;
+	color: #3191c3;
+	border: solid 1px #d4d4d5;
+}
+.xy_xrld_td2
+{
+	width: 180px;
+	height: 30px;
+	border: solid 1px #d4d4d5;
+}
+.xy_xrld_td3
+{
+	width: 30px;
+}
+.xy_xrld_a
+{
+	width: auto;
+	color: Black;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*导师介绍样式*/
+.tb
+{
+	border-width: 1px;
+	border-collapse: collapse;
+	border-color: #EDF1FA;
+}
+.tabcaption
+{
+	text-align: left;
+	font-family: 宋体;
+	font-size: 24px;
+	font-weight: bold;
+	padding-bottom:5px;
+}
+
+.td
+{
+	width: 100px;
+	height: 30px;
+	border: solid 1px #EDF1FA;
+}
+
+/*管理员查看站内信列表页面（amdin_messagelist）*/
+.grd_faxinren
+{
+	width: 50px;
+	text-align: center;
+}

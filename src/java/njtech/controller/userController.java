@@ -20,6 +20,7 @@ public class userController {
     public String toIndex(HttpServletRequest request,Model model) throws Exception{
         int userId = Integer.parseInt(request.getParameter("id"));
         User user = this.userService.selectUser(userId);
+        System.out.println(user.getUser_name());
         model.addAttribute("user", user);
         return "index";
     }

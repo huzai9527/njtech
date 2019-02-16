@@ -11,6 +11,10 @@
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
     <!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器 -->
     <context:component-scan base-package="njtech.controller" />
+    <!--静态文件的映射-->
+    <mvc:resources mapping="/views/**" location="/views/static/"/>
+    <mvc:annotation-driven/>
+
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->
     <bean id="mappingJacksonHttpMessageConverter"
           class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
@@ -46,5 +50,12 @@
         <!-- 内存中的最大值 -->
         <property name="maxInMemorySize" value="40960" />
     </bean>
+    <!--&lt;!&ndash;注解处理器 没有要实现的接口 解析handler方法中的参数 映射器@controller @requestMapping&ndash;&gt;-->
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>-->
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>-->
+    <!--&lt;!&ndash;配置处理器映射器&ndash;&gt;-->
+    <!--<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>-->
+    <!--&lt;!&ndash;配置处理器适配器&ndash;&gt;-->
+    <!--<bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>-->
 
 </beans>

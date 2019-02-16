@@ -2,9 +2,11 @@ package njtech.pojo;
 
 public class User {
     private Integer user_id;
-    private String username;
-    private String password;
-    private Integer privilege;
+    private String user_name;
+    private String user_password;
+    private Integer user_privilege;
+    private String user_pic;
+    private String user_email;
 
     public Integer getUser_id() {
         return user_id;
@@ -14,27 +16,43 @@ public class User {
         this.user_id = user_id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUser_name() {
+        return user_name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
     }
 
-    public String getPassword() {
-        return password;
+    public String getUser_password() {
+        return user_password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setUser_password(String user_password) {
+        this.user_password = user_password;
     }
 
-    public Integer getPrivilege() {
-        return privilege;
+    public Integer getUser_privilege() {
+        return user_privilege;
     }
 
-    public void setPrivilege(Integer privilege) {
-        this.privilege = privilege;
+    public void setUser_privilege(Integer user_privilege) {
+        this.user_privilege = user_privilege;
+    }
+
+    public String getUser_pic() {
+        return user_pic;
+    }
+
+    public void setUser_pic(String user_pic) {
+        this.user_pic = user_pic;
+    }
+
+    public String getUser_email() {
+        return user_email;
+    }
+
+    public void setUser_email(String user_email) {
+        this.user_email = user_email;
     }
 }
