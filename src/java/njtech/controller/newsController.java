@@ -20,7 +20,7 @@ public class newsController {
     @Resource
     private NewsService newsService;
 
-    @RequestMapping("views/school")
+    @RequestMapping("views/schoolNews")
     public String schoolNews(Model modelAndView, HttpServletRequest request) throws Exception {
         Page page = new Page();
         page.setCurrentPage(Integer.parseInt(request.getParameter("page")));
@@ -29,5 +29,16 @@ public class newsController {
         modelAndView.addAttribute("schoolNews",schoolNews);
         modelAndView.addAttribute("page",page);
         return "news";
+    }
+    @RequestMapping("views/newsDetail")
+    public String schoolDetail(Model model, HttpServletRequest request) throws Exception{
+        Integer id = Integer.parseInt(request.getParameter("id"));
+        News news = newsService.findSchoolNewsDetail(id);
+        News news1 = newsService.findSchoolNewsDetail(id-1);
+        News news2 = newsService.findSchoolNewsDetail(id+1);
+        model.addAttribute("news",news);
+        model.addAttribute("news1",news1);
+        model.addAttribute("news2",news2);
+        return "newsDetail";
     }
 }

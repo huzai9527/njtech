@@ -4,5 +4,8 @@
     <select id="findSchoolNewsByPage" resultType="njtech.pojo.News" parameterType="njtech.pojo.Page">
         select * from njtech_cs.school_news order by id  desc limit #{start},#{pageSize}
     </select>
+    <select id="findSchoolNewsDetail" resultType="njtech.pojo.News" parameterType="int">
+        select * from school_news where id=#{id}
+    </select>
 
 </mapper>

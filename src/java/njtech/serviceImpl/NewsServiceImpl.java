@@ -16,4 +16,9 @@ public class NewsServiceImpl implements NewsService {
     public List<News> findSchoolNewsByPage(Page page) throws Exception {
         return newsMapper.findSchoolNewsByPage(page);
     }
+
+    @Override
+    public News findSchoolNewsDetail(Integer id) throws Exception {
+        return newsMapper.findSchoolNewsDetail(id);
+    }
 }

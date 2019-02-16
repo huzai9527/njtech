@@ -111,8 +111,8 @@
 						</ul>
 					</div>
 					<div class="ic_wrap fr">
-						<h3 class="n_title">${news.title}<span class="n_date">发布日期：<fmt:formatDate value="${item.time}" pattern="yyyy/MM/dd  HH:mm:ss" /></span></h3>
-						${news.content}
+						<h3 class="n_title">${news.getTitle()}<span class="n_date">发布日期：<fmt:formatDate value="${item.getTime()}" pattern="yyyy/MM/dd  HH:mm:ss" /></span></h3>
+						${news.getContent()}
 						<div class="n_link">
 	                        <ul>
 	                            <li>上一条<a href="/views/newsDetail?id=${news1.id}">${news1.title}</a><span class="date"><fmt:formatDate value="${item.time}" pattern="yyyy/MM/dd  HH:mm:ss" /></span></li>
